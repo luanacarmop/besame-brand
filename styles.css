@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%
+    width: 100%;
 }
 
 .nav-links {
@@ -47,7 +47,6 @@ body {
     grid-column: 2; /* Places item 2 in the second column */
 }
 
-
 /*SKINCARE BIT*/
 
 .skincare {
@@ -56,4 +55,149 @@ body {
     grid-template-rows: 160px;
     background-color: #6e608c;
     overflow: hidden;
+}
+
+/*PRODUCTS BIT*/
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(5, 250px);
+    grid-template-rows: 200px;
+    overflow: hidden;
+    gap: 30px;
+    justify-content: center;
+    border-radius: 5px;
+    width: 100%
+}
+
+.products-container > div {
+    border-radius: 5px;
+}
+
+.product-one {
+    background-color: yellow;
+    grid-column: 1;
+}
+
+.product-two {
+    background-color: pink;
+    grid-column: 2;
+}
+
+.product-three {
+    background-color: green;
+    grid-column: 3;
+}
+
+.product-four {
+    background-color: blue;
+    grid-column: 4;
+}
+
+.product-five {
+    background-color: purple;
+    grid-column: 5;
+}
+
+/* MAKEUP */
+.makeup-container {
+    display: grid;
+    grid-template-columns: 1000px; /* One column */
+    grid-template-rows: 500px; /* One row */
+    overflow: hidden;
+    justify-content: center;
+}
+
+.makeup-square {
+    background-color: aqua;
+    /* grid-column is unnecessary */
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/*CART PRODUCTS*/
+
+.cart-container {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(8, 200px);
+    grid-template-rows: repeat(2, 300px);
+    gap: 50px;
+    margin: auto;
+    width: 1000px;
+}
+
+.cart-container > div {
+    border-radius: 5px;
+}
+
+.grid-item {
+    grid-row: 1;
+    background-color: purple;
+}
+
+.grid-item2 {
+    grid-row: 2;
+    background-color: pink;
+}
+
+
+/*RANDOM SQUARE*/
+
+.square-container {
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 100px;
+    background-color: aqua;
+    width: 100%;
+}
+
+
+/*PERKS*/
+
+.perks-container {
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: repeat(4, 20%);
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.perks-container > div {
+    background-color: pink;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    background-color: hotpink;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: repeat(4, 100px);
+    justify-content: space-evenly;
+}
+
+.footer-container > div {
+    justify-content: center;
+}
+
+p.footer-rights {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.contacts-title {
+    margin: 0;
+    padding: 0;
+}
+
+.contacts-list {
+    margin: 0;
+    padding: 0;
 }
