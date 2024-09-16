@@ -1,11 +1,9 @@
-
 body {
     margin: 0;
-        font-family: 'Arial Rounded MT', Arial, sans-serif;
-    }
+}
 
 .content-wrapper {
-    margin: 30px;
+    margin: 20px;
     overflow: hidden;
     border-radius: 5px;
 }
@@ -61,16 +59,12 @@ body {
 
 /*PRODUCTS BIT*/
 
-.section-two {
-    background-color: #dbcfa5;
-}
-
 .products-container {
     display: grid;
-    grid-template-columns: repeat(5, 17%);
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 250px);
+    grid-template-rows: 200px;
     overflow: hidden;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     border-radius: 5px;
     width: 100%
@@ -78,50 +72,43 @@ body {
 
 .products-container > div {
     border-radius: 5px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
 }
 
-.bar-div {
-    display: flex;
-    justify-content: center;
+.product-one {
+    background-color: yellow;
+    grid-column: 1;
 }
 
-.product-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+.product-two {
+    background-color: pink;
+    grid-column: 2;
 }
 
+.product-three {
+    background-color: green;
+    grid-column: 3;
+}
 
-/*PRODUCTS IMAGES*/
+.product-four {
+    background-color: blue;
+    grid-column: 4;
+}
 
-.products-container img {
-        transition: all 0.3s ease-in-out;
-      }
-      
-      .products-container img:hover {
-        transform: scale(1.1); /* Makes the image 10% bigger */
-        filter: drop-shadow(0 0 5px rgba(225, 164, 158, 0.7)); /* Glow effect around the visible part of the PNG */
-        cursor: pointer;
-    }
+.product-five {
+    background-color: purple;
+    grid-column: 5;
+}
 
 /* MAKEUP */
-
-.section-three {
-    background-color: #dbcfa5;
-}
-.lancamentos-container {
+.makeup-container {
     display: grid;
     grid-template-columns: 1000px; /* One column */
     grid-template-rows: 500px; /* One row */
-    justify-content: center;
-    position: relative;
     overflow: hidden;
+    justify-content: center;
 }
 
-.lancamentos-square {
+.makeup-square {
     background-color: aqua;
     /* grid-column is unnecessary */
     width: 100%;
@@ -129,93 +116,34 @@ body {
     border-radius: 5px;
 }
 
-.img-lancamentos {
-    height: auto;
-
-}
-.lancamentos-button {
-        position: absolute;
-        top: 440px; /* Adjust vertical positioning */
-        left: 1060px; /* Adjust horizontal positioning */
-        transform: translate(-50%, -50%); /* Center the button */
-        background-color: #e1a49e; /* Button background color */
-        color: #fff; /* Button text color */
-        border: none;
-        padding: 20px 50px;
-        cursor: pointer;
-        border-radius: 5px; /* Optional: rounded corners */
-        transform: background-color 0.15 ease;
-
-    }
-    
-    .lancamentos-button:hover {
-        background-color: #bb8682; /* Darker background on hover */
-    }
-
 /*CART PRODUCTS*/
-
-.div-products {
-    margin: auto;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 210px;
-}
-
-.cart-products {
-    background-color: #b49dd6;
-}
 
 .cart-container {
     display: grid;
     overflow: hidden;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(8, 200px);
+    grid-template-rows: repeat(2, 300px);
+    gap: 50px;
     margin: auto;
     width: 1000px;
-    justify-content: center;
+}
+
+.cart-container > div {
+    border-radius: 5px;
 }
 
 .grid-item {
-padding: 10px;
-background-color: white;
-border-radius: 20px;
-
+    grid-row: 1;
+    background-color: purple;
 }
 
-.add-to-cart {
-    display: flex;
-    margin: auto;
-    background-color:#e1a49e;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    box-shadow:rgba(0, 0, 0, 0.2);
-    padding: 5px;
+.grid-item2 {
+    grid-row: 2;
+    background-color: pink;
 }
 
-.grid-item p {
-    font-size: 13px;
-    margin: 10px;
-    font-weight: lighter;
-    display: flex;
-    text-align: center;
-}
-
-.grid-img {
-    display: flex;
-    margin: auto;
-    width: 40%
-}
 
 /*RANDOM SQUARE*/
-
-.square-section {
-    background-color: #b49dd6;
-}
 
 .square-container {
     display: grid;
